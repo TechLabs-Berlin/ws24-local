@@ -15,10 +15,10 @@ const SavedPage = () => {
   const fetchBookmarkedEvents = async () => {
     try {
       const response = await axios.get('http://192.168.1.218:5002/bookmarked-events');
-      setBookmarkedEvents(response.data); // Assuming response.data contains bookmarked events
+      setBookmarkedEvents(response.data); 
     } catch (err) {
       console.error('Error fetching bookmarked events:', err);
-      // Handle error appropriately
+      
     }
   };
 
@@ -39,7 +39,7 @@ const SavedPage = () => {
   const _handleRefresh = async () => {
     setRefreshing(true);
     try {
-      // Fetch bookmarked events again
+      
       await fetchBookmarkedEvents();
     } catch (error) {
       console.error('Error refreshing bookmarked events:', error);
@@ -168,11 +168,11 @@ const updateBookmarkedEvents = async (newIds) => {
   try {
     const response = await axios.put('http://192.168.1.218:5002/update-bookmarks', { bookmarkedEventIds: newIds });
     console.log('Updating bookmarked events with IDs:', newIds);
-    return response.data; // Return the updated data if needed
+    return response.data; 
   } catch (err) {
     console.error('Error updating bookmarked events:', err);
-    // Handle error appropriately
-    throw err; // Re-throw the error if needed
+    
+    throw err; 
   }
 };
 

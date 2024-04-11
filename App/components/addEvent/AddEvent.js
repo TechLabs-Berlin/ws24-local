@@ -13,10 +13,10 @@ const AddEvent = () => {
   const [day, setDay] = useState('');
   const [month, setMonth] = useState('');
   const [year, setYear] = useState('');
-  const [eventImage, setEventImage] = useState(null); // To store image details
+  const [eventImage, setEventImage] = useState(null); 
 
   const handleIconPress = (iconName) => {
-    // Implement logic to handle when an icon is pressed
+   
     console.log(`Icon '${iconName}' pressed`);
   };
 
@@ -25,7 +25,7 @@ const AddEvent = () => {
       title: 'Select Event Image',
       storageOptions: {
         skipBackup: true,
-        path: 'images', // Optional: Custom path for saving images (Android)
+        path: 'images', 
       },
     };
 
@@ -37,13 +37,13 @@ const AddEvent = () => {
         console.error('Image picker error:', response.error);
       } else {
         const source = { uri: response.uri };
-        setEventImage(source); // Update state with image source
+        setEventImage(source); 
       }
     });
   };
 
   const handleAddEvent = () => {
-    // Implement logic to handle form submission, including image data
+   
     console.log('Event submitted:', {
       artistName,
       eventName,
@@ -55,7 +55,7 @@ const AddEvent = () => {
       artistLinks,
       aboutArtist,
       aboutEvent,
-      aboutVenue, // Image source or additional image data
+      aboutVenue,
     });
   };
 

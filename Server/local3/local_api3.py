@@ -51,20 +51,21 @@ def search_events():
 
     genre_results = event_data[event_data['genre'].str.lower().str.contains(lower_query)]
 
-    # Combine results
+    
     filtered_results = pd.concat([artist_results, genre_results])
 
-    # Sort results prioritizing genre matches (ascending order) BUT ONLY if the query seems like a genre search
-    if re.search(r"[fm]\s*?\ or\s*?genre", lower_query): # Basic pattern for "genre" or "for genre" searches
+  
+    if re.search(r"[fm]\s*?\ or\s*?genre", lower_query): 
+        
         filtered_results = filtered_results.sort_values(by=lambda x: x['genre'].str.lower().str.contains(lower_query), ascending=True)
 
-    # Remove duplicates (if artists appear in both results)
+   
     filtered_results = filtered_results.drop_duplicates(subset=['artist'], keep='first')
 
 
     logging.info("Filtered events: %s", filtered_results.to_dict(orient='records'))
 
-    # Return all relevant columns
+    
     return jsonify(filtered_results[['artist', 'genre', 'subgenre', 'home', 'date', 'time', 'venue']].to_dict(orient='records'))
 
 @app.route('/bookmarked-events', methods=['GET'])
@@ -72,7 +73,7 @@ def get_bookmarked_events():
     bookmarked_events = event_data[event_data['bookmarked'] == True]
     return jsonify(bookmarked_events.to_dict(orient='records'))
 
-# Endpoint to update bookmarks
+
 @app.route('/update-bookmarks', methods=['PUT'])
 def update_bookmarks():
     try:

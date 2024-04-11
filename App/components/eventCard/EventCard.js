@@ -20,19 +20,19 @@ const EventCard = ({ searchResult, onBookmarkChange, bookmarkedEvents }) => {
         let updatedEvents = [];
 
         if (!searchResult || searchResult.length === 0) {
-          // Fetch all events
+         
           console.log("Calling endpoint again from Event Card")
           const response = await axios.get('http://192.168.1.218:5002/events');
           const allEvents = response.data;
 
-          // Randomly select 15 events
+          
           const numEventsToShow = 15;
           for (let i = 0; i < numEventsToShow; i++) {
             const randomIndex = Math.floor(Math.random() * allEvents.length);
             updatedEvents.push(allEvents[randomIndex]);
           }
         } else {
-          // Use search results if available
+          
           updatedEvents = searchResult.map(event => ({
             ...event,
             isBookmarked: bookmarkedEvents && bookmarkedEvents.some(item => item.id === event.id),
@@ -59,13 +59,13 @@ const EventCard = ({ searchResult, onBookmarkChange, bookmarkedEvents }) => {
 
       setEvents(updatedEvents);
 
-      // Call the parent component callback to update bookmarks
+      // Call the parent component callback to update bookmarks!!
       if (onBookmarkChange) {
         onBookmarkChange(updatedEvents.filter(event => event.isBookmarked).map(event => event.id));
       }
     } catch (err) {
       console.error('Error toggling bookmark for event:', err);
-      // Handle error appropriately
+      
     }
   };
 

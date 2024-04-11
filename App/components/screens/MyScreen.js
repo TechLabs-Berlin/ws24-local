@@ -53,7 +53,7 @@ const MyScreen = () => {
         searchQuery={searchQuery}
         onSearchResult={handleSearchResult}
       />
-      {searchResult !== undefined && ( // Check if searchResult is defined
+      {searchResult !== undefined && ( 
         <EventCard events={searchResult.length > 0 ? searchResult : events} />
       )}
     </View>

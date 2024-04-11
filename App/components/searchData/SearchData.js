@@ -7,7 +7,7 @@ const SearchData = ({ searchQuery, onSearchResult }) => {
     const fetchSearchResults = async () => {
       try {
         const response = await axios.get(`http://192.168.1.218:5002/search?query=${searchQuery}`);
-        onSearchResult(response.data); // Pass the fetched search results to the parent component
+        onSearchResult(response.data); 
       } catch (error) {
         console.error('Error fetching search results:', error);
         onSearchResult([]);
@@ -15,7 +15,7 @@ const SearchData = ({ searchQuery, onSearchResult }) => {
     };
 
     if (searchQuery && searchQuery !== '') {
-      fetchSearchResults(); // Fetch search results only if there is a search query
+      fetchSearchResults(); 
     } else {
       onSearchResult([]);
     }

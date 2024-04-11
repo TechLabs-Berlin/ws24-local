@@ -12,7 +12,7 @@ const SearchPage = () => {
   const [searchResult, setSearchResult] = useState([]);
 
   const handleSearchChange = (query) => {
-    console.log('Search query:', query); // Add this console log
+    console.log('Search query:', query); 
     setSearchQuery(query);
   };
 
@@ -21,7 +21,7 @@ const SearchPage = () => {
   };
 
   const handleSearchResult = (results) => {
-    console.log('Search results:', results); // Add this console log
+    console.log('Search results:', results); 
     setSearchResult(results);
   };
   console.log('Search result state after update:', searchResult);

@@ -11,7 +11,7 @@ const CustomSearchBar = ({ onValueChange, onCancel }) => {
   };
 
   const handleSearch = () => {
-    onValueChange(text); // Trigger search action
+    onValueChange(text); 
   };
 
   const handleCancel = () => {
@@ -30,7 +30,7 @@ const CustomSearchBar = ({ onValueChange, onCancel }) => {
         placeholder="Search"
         value={text}
         onChangeText={handleInputTextChange}
-        onSubmitEditing={handleSearch} // Call handleSearch when return key is pressed
+        onSubmitEditing={handleSearch} 
       />
       {text.length > 0 && (
         <TouchableOpacity onPress={handleCancel}>

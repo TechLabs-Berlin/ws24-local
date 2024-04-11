@@ -4,7 +4,7 @@ import { FontAwesome } from '@expo/vector-icons';
 import axios from 'axios';
 
 const ArtistScreen = () => {
-  const [events, setEvents] = useState(null); // Rename the state variable to events
+  const [events, setEvents] = useState(null); 
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -13,7 +13,7 @@ const ArtistScreen = () => {
       console.log('Fetching data...');
       try {
         const response = await axios.get(`http://192.168.1.218:5002/events/${eventId}`);
-        setEvents(response.data); // Assuming the response contains event data
+        setEvents(response.data); 
         setIsLoading(false);
       } catch (error) {
         console.log('Error fetching data:', error)
@@ -28,7 +28,7 @@ const ArtistScreen = () => {
   }, [eventId]);
 
   const handleEventTouch = (eventId) => {
-    navigation.navigate('ArtistScreen', { eventId }); // Pass eventId as a prop
+    navigation.navigate('ArtistScreen', { eventId }); 
   };
   
 

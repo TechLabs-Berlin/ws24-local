@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { View, StyleSheet, Text, TouchableOpacity, Image, FlatList, RefreshControl } from 'react-native';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
-import axios from 'axios'; // Import axios for fetching events
+import axios from 'axios'; 
 import  { EventCardRenderer }  from '../eventCard/EventCardRenderer';
 import { toggleBookmark } from '../../helpers/bookmarkHelpers';
 
 const HomePage = () => {
   const [bookmarkedEvents, setBookmarkedEvents] = useState([]);
-  const [events, setEvents] = useState([]); // State to store events data
-  const [loading, setLoading] = useState(true); // State to track loading status
+  const [events, setEvents] = useState([]); 
+  const [loading, setLoading] = useState(true); 
   const [refreshing, setRefreshing] = useState(false);
 
   useEffect(() => {
@@ -19,7 +19,7 @@ const HomePage = () => {
         const response = await axios.get('http://192.168.1.218:5002/events');
           const allEvents = response.data;
           setBookmarkedEvents(allEvents.filter(e => e.bookmarked));
-          // Randomly select 15 events
+          
           const numEventsToShow = 15;
           for (let i = 0; i < numEventsToShow; i++) {
             const randomIndex = Math.floor(Math.random() * allEvents.length);
@@ -27,10 +27,10 @@ const HomePage = () => {
           }
           console.log(updatedEvents.length);
           setEvents(updatedEvents);
-        setLoading(false); // Set loading to false after data is fetched
+        setLoading(false); 
       } catch (error) {
         console.error('Error fetching events:', error);
-        setLoading(false); // Set loading to false in case of error
+        setLoading(false); 
       }
     })
 
@@ -47,10 +47,9 @@ const HomePage = () => {
   };
 
     const _handleRefresh = () => {
-    setRefreshing(true); // Set refreshing to true when the user pulls down to refresh
-    // You can call your fetchEvents function or any other function to fetch updated data here
+    setRefreshing(true); 
     setTimeout(() => {
-      setRefreshing(false); // Set refreshing to false after data is refreshed
+      setRefreshing(false); 
     }, 2000);
 
   };
