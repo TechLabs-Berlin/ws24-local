@@ -1,39 +1,39 @@
-# CD into Local folder
+#### CD into Local folder
 
 React-native
 Expo (to visualize the app, I used expo go and/or iOS Simulator)
-# You might nneed to install additional libraries like:
+#### You might nneed to install additional libraries like:
 react-native-async
 @react-navigation/native
 @react-navigation/bottom-tabs
 @expo/vector-icons { MaterialIcons, MaterialCommunityIcons, Fontisto, Entypo, Feather, FontAwesome, Ionicons [didn't manage to access/use Material-Symbols, therefore I had to use so many Icon-Families to get the ones more similar to the ones needed] } 
 @expo-google-fonts/inter {Inter_400Regular, Inter_700Bold, Inter_500Medium, Inter_300Light }
 
-# npx expo start -c
+#### npx expo start -c
 
 for the server:
 
-# CD into local3
-# install dependencies {if needed}
+### CD into local3
+#### install dependencies {if needed}
 venv, Flask, jsonify, request, python3
 Pandas
 CORS
 re
 
-# python3 /your_directory_folder/local3/local_api3.py
+- python3 /your_directory_folder/local3/local_api3.py
 
 
 you will find a couple of extra files for the things I was trying but didnt manage to get to work.
 
-# change API url and port before the endpoint in: 
+## change API url and port before the endpoint in: 
 Bookmarkhelper
 SearchData
 SavedPage
 HomePage
 EventCard
-# .js files to point to your local flask
+ .js files to point to your local flask
 
-# server logs samples:
+## server logs samples:
 
 INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
