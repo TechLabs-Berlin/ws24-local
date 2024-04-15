@@ -1,4 +1,4 @@
-<img src="Blog/images/Local.png" width="1200">
+<img src="images/Local.png" width="1200">
 
 ##UX Track
 
@@ -6,13 +6,13 @@ The process of kick-starting the project, particularly for the UX team started o
  Moreover, our mentor, Vincent, provided clear structure and valuable feedback along the way, which greatly facilitated our workflow within the designated time frame.
  Our work (Reza and Ana) started with user research; we built a Research Survey, gathered and analysed data from the user answers, and created Personas. Then we communicated the results with the team. As we had their support, it enabled us to discuss and define the necessary features and requirements for the app together.
 
-| <img src="Blog/Pictures/Miro.png" width="500"> | <img src="Blog/Pictures/Wireframes.png" width="500"> |
+| <img src="images/Miro.png" width="500"> | <img src="images/Wireframes.png" width="500"> |
 | - | - | 
 
  
  We continued our track with undertaking different UX tasks such as creating Storyboards, User Flows, Information Architecture schemes, Low and High Fidelity Wireframes (which were progressing from the start and till the end of our project), and then eventually, we reached the stages of Prototyping and conducted User Testing.
 
-| <img src="Blog/Pictures/WireframesConnected.png" width="500"> |
+| <img src="images/WireframesConnected.png" width="500"> |
 
  We maintained close communication within the UX track throughout the project, making joint decisions and consulting regularly to ensure alignment. We also held several meetings, sometimes including Vincent, to clarify our goals and tasks. One notable pressure point was the dependency of the entire team on the UX output. While scheduling conflicts and agreeing on details sometimes posed challenges, these issues were manageable and did not significantly affect our progress.
 
