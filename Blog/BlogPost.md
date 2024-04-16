@@ -32,6 +32,16 @@ In hindsight, I learned that coding demands meticulous planning, logical structu
 ## DS Track
 
 ### Can
+The app is supposed to connect users to artists with a small audience. So the first challenge, for the DS part, was to find the data for small events, especially those not referenced on other platforms. Obviously, there was no data ready to be used for this. The ideal solution would have been web scraping, but nobody in the team had this skill in their toolbox. So we thought about creating the data manually for the purposes of the project. But after realizing that there would be a gap between what we wanted to do for the app and the MVP, we finally decided to set this aside, and use mainstream concert data. This was not easy to find either, by the way. Nothing matched what we needed, except one dataset on kaggle listing concerts for an American festival in 2019. 
+
+Once this point was solved, we were faced with even bigger problems. 
+It was very difficult to find something to do for the project that involved a DS skill, or at least one that we'd had the opportunity to study during the theoretical phase. The only hypothesis, involving data science and potentially relevant to the project, was to build a recommendation system. But I found myself at a dead end when it came to integrating it into the app. At this point I was completely lost in the project.
+
+Added to this was the fact that we didn't have a back-end developer.   
+After a meeting with some of our mentors, the solution we found for this problem was to split the DS team in order to have one of us working on the back end solution, and the other one on a recommendation system(on condition that it is not integrated into the project).
+I took the back-end part because I was already working on it with Stefano, our front end techie.
+After hesitating between FastAPI and Flask, and after participating in Rashmi D’Souza’s workshop on Flask (thank you Rashmi by the way), we decided to work with the Flask framework. It was a little bit challenging to start building something new from zero, especially in the middle of the project phase, but after some point I was capable of delivering a first version of the API’s.. which was supposed to work but, of course, when came the moment of connecting it with the front-end, nothing was actually working. At this point we’ve started to collaborate actively with Stefano in order to understand and solve all the error messages we were getting from the app. The errors were coming from everywhere, so we had to modify the code several times, clean up and modify the dataset, rewrite the whole thing over and over again...
+In the end it worked so we were satisfied of course, but if you ask me if I’m capable now of building a complete Flask back-end solution, of course I’m not. I learned a lot of things but to be honest without Stefano’s contribution it would have been impossible for me to build the whole thing on my own. It's one thing to build some api’s, but it's quite another to make the connection with the front end.
 
 
 
