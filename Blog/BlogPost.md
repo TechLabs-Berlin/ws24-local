@@ -43,7 +43,7 @@ I took the back-end part because I was already working on it with Stefano, our f
 After hesitating between FastAPI and Flask, and after participating in Rashmi D’Souza’s workshop on Flask (thank you Rashmi by the way), we decided to work with the Flask framework. It was a little bit challenging to start building something new from zero, especially in the middle of the project phase, but after some point I was capable of delivering a first version of the API’s.. which was supposed to work but, of course, when came the moment of connecting it with the front-end, nothing was actually working. At this point we’ve started to collaborate actively with Stefano in order to understand and solve all the error messages we were getting from the app. The errors were coming from everywhere, so we had to modify the code several times, clean up and modify the dataset, rewrite the whole thing over and over again...
 In the end it worked so we were satisfied of course, but if you ask me if I’m capable now of building a complete Flask back-end solution, of course I’m not. I learned a lot of things but to be honest without Stefano’s contribution it would have been impossible for me to build the whole thing on my own. It's one thing to build some api’s, but it's quite another to make the connection with the front end.
 
-
+It was great to work closely with Stefano directly on the app, but I was still frustrated at not being able to deploy some data science skills for the project. So I worked on a recommendation system on my own. It seemed appropriate to opt for a content-based recommendation system. To do this, I used a knn model with some Spotify datasets. The code and the details are in the DS part of the repository.
 
 ### Shahrukh
 
