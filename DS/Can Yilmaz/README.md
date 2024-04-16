@@ -10,5 +10,5 @@ I found several Spotify datasets on kaggle, and assembled them in order to have 
 The datasets I found were based on songs and not artists, but for the concert recommender I needed suggestions based on artists of course. So for each audio feature, I used the mean of the songs features in order to have some metrics associated with the artists of the datasets and not with the songs anymore. 
 Then I used the K-nearest neighbors model for the recommendation model.
 
-Unable to deploy it in the app, I built a simple Flask server with an html template, in order to use and test it. I would obviously have liked to take the idea further, but with everything that had to be done for the project, I unfortunately didn't have more time to devote to it.
+Unable to deploy it in the app, I built a simple Flask server with an html template, in order to deploy it on a local server and test it. I would obviously have liked to take the idea further, but with everything that had to be done for the project, I unfortunately didn't have more time to devote to it.
 
