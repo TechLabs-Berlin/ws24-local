@@ -1,4 +1,4 @@
-##CONCERT RECOMMENDER
+#CONCERT RECOMMENDER
 
 The general idea of the Concert Recommender is as follows: each time a user selects a concert, the app is able to suggest concerts likely to interest them. The recommendation is based solely on musical proximity to the chosen concert.
 
