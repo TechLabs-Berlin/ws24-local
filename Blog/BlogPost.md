@@ -2,7 +2,7 @@
 
 "LOCAL" is an app designed to spotlight small music events and performances by local, independent musicians across the city. The app can be used by music enjoyers to find events, or to add events if they own a venue or are artists themselves. The app delivers curated results and recommendations, based on the selected city.
 
-##UX Track
+## UX Track
 
 The process of kick-starting the project, particularly for the UX team started out smoothly. There was some initial work being done before getting to the teamwork stage, so fortunately, we had some preliminary preparation. Also, we had primary and useful discussions together with the whole team about what the app could and would be, so that we were mostly set about what would be the overall direction of the project, what we think about it, and getting a sense of our individual contribution to it.
  Moreover, our mentor, Vincent, provided clear structure and valuable feedback along the way, which greatly facilitated our workflow within the designated time frame.
@@ -20,7 +20,7 @@ The process of kick-starting the project, particularly for the UX team started o
 
 
 
-##WD Track
+## WD Track
 
 I admit, starting out alone was a bit nerve-wracking. Without a partner to bounce ideas off of or troubleshoot with, the workload seemed a tad overwhelming. To get going, I started piecing together something based on the project presentation wireframes. It was a clever workaround, saving me from waiting on the actual wireframes. But, as with most things, there were pros and cons. On the upside, having certain components prepped, like the search bar and event cards, was a boon. However, once I needed to split them up, everything seemed to unravel. It wasn't as simple as dividing the code into two files as I'd anticipated. In fact, it took considerable effort to reassemble them. What's more, a file that initially served as a renderer morphed into a multipurpose file over time, leading to a frustrating circularity I couldn't untangle on my own. Thankfully, a friend lent a hand with that conundrum.
 
@@ -41,8 +41,6 @@ So after data cleaning and modification the data was ready to be created for fil
 Additionally, since we wanted to add a feature of filtering based on the tickets entry price of the concerts, hence random integer values were created for the concerts and assigned to the individuals rows so that price based filters could be created and the user may use them to base on their willingness to pay.  An added bonus feature initially thought of was to add ratings to the concerts based on the users past experiences as well as to provide recommendations, therefore these had also been added to the dataset. 
 However, in order to graduate integrating a Machine Learning algorithm was a need and this motivated us to look for ways to implement it into our project. The team came across the decision to create a recommendation system based on the data set to the users where they may see similar concerts apart from their search. To get started with ML algos, our track lead suggested to either go for collaborative filtering based or content based recommendation system, which led us to research deeper into backend working of a recommendation system and coming up with a content based recommendation ML algo that fits the bill according to our dataset. For deploying our content based recommendation system we first had to extract the relevant features from the dataset that could be used for the analysis such as the genre, artist, venue etc. Then we used the Scikit TF-IDF (Term Frequency-Inverse Document Frequency) vectorization to convert our features into number and the amount of times these occur in our dataset. The cosine similarity function calculates this similarity scores among the concerts and gives an output of the concerts that are similar in nature (features) such is an example of concerts that are taking place on the same venue with comparable genre, city etc. and finally generate recommendations based on the similarity scores.
 
-
-##Back-End
 
 
 
