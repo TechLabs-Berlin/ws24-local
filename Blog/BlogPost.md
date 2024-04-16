@@ -31,11 +31,11 @@ In hindsight, I learned that coding demands meticulous planning, logical structu
 
 ## DS Track
 
-###Can
+### Can
 
 
 
-###Shahrukh
+### Shahrukh
 
 So I started out as a DS techie for the team LOCAL to provide the backend support for the Data of the concerts happening in the local scene. The first and foremost task was to find relevant datasets that are compatible with our problem statement and this took us to deep dive on Kaggle (recommended by our mentor) to look for a solution. After shortlisting 3 to 4 datasets, the team decided to go with the ‘music schedule’ which was close to fulfilling the needs as it had some ideal characteristics for our project. 
 From here on, the main DS work began from cleaning the dataset to modifying it as per our use. Since the app required filtering-based search as an MVP, I prepared the dataset for searching to ensure that the search does not break down. Additionally, I performed data analytics to create filters that display relevant results for the search items in the user interface.
