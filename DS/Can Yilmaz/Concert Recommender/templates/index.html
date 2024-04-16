@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Concert Recommender</title>
+</head>
+<body>
+    <h1>Concert Recommender</h1>
+    <form id="artistForm">
+        <label for="artist_name">Enter an artist's name:</label><br>
+        <input type="text" id="artist_name" name="artist_name"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="recommendations"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('#artistForm').submit(function(event) {
+            event.preventDefault();
+            var artistName = $('#artist_name').val();
+            $.post('/recommend', {'artist_name': artistName}, function(data) {
+                $('#recommendations').empty();
+                var recommendationsList = $('<ul>');
+                $.each(data.recommended_artists, function(index, artist) {
+                    recommendationsList.append($('<li>').text(artist));
+                });
+                $('#recommendations').append(recommendationsList);
+            });
+        });
+    </script>
+</body>
+</html>

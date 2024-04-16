@@ -42,6 +42,8 @@ Additionally, since we wanted to add a feature of filtering based on the tickets
 However, in order to graduate integrating a Machine Learning algorithm was a need and this motivated us to look for ways to implement it into our project. The team came across the decision to create a recommendation system based on the data set to the users where they may see similar concerts apart from their search. To get started with ML algos, our track lead suggested to either go for collaborative filtering based or content based recommendation system, which led us to research deeper into backend working of a recommendation system and coming up with a content based recommendation ML algo that fits the bill according to our dataset. For deploying our content based recommendation system we first had to extract the relevant features from the dataset that could be used for the analysis such as the genre, artist, venue etc. Then we used the Scikit TF-IDF (Term Frequency-Inverse Document Frequency) vectorization to convert our features into number and the amount of times these occur in our dataset. The cosine similarity function calculates this similarity scores among the concerts and gives an output of the concerts that are similar in nature (features) such is an example of concerts that are taking place on the same venue with comparable genre, city etc. and finally generate recommendations based on the similarity scores.
 
 
+##Back-End
+
 
 
 
